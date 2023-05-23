@@ -12,7 +12,10 @@ import itertools
 def print_result(filename, location):
     top, right, bottom, left = location
     print("{},{},{},{},{}".format(filename, top, right, bottom, left))
-
+    
+ddef print_result1(filename, location):
+    top, right, bottom, left = location
+    print("{},{},{},{},{}".format(filename, top, right, bottom, left))
 
 def test_image(image_to_check, model, upsample):
     unknown_image = face_recognition.load_image_file(image_to_check)
